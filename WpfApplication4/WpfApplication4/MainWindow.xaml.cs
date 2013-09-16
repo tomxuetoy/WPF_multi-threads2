@@ -145,11 +145,11 @@ namespace WpfApplication4
         private void UpdateUi()
         {
             //显示
-            listView1.ItemsSource = _threads.Select(obj => new
+            listView1.ItemsSource = _threads.Select(obj2 => new
             {
-                Name = obj.Name,
-                ThreadState = obj.ThreadState,
-                ManagedThreadId = obj.ManagedThreadId,
+                Name = obj2.Name,
+                ThreadState = obj2.ThreadState,
+                ManagedThreadId = obj2.ManagedThreadId,
             });
         }
 
